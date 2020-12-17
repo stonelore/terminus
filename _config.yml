@@ -1,0 +1,20 @@
+baseurl: /terminus
+timezone: Europe/Rome
+permalink: pretty
+css:
+  themes:
+    dark:
+      bg: "#000"
+      bg1: "#111"
+      fg: "#fff"
+      fg1: "#fd0"
+    light:
+      bg: "#fff"
+      bg1: hsl(216,33%,97%)
+      fg: hsl(210,12%,16%)
+      fg1: hsl(212,97%,43%)
+    darkblue:
+      bg: hsl(216,28%,7%)
+      bg1: hsl(216,21%,11%)
+      fg: hsl(210,17%,82%)
+      fg1: hsl(212,100%,67%)

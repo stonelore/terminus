@@ -1,0 +1,26 @@
+html, header, nav, footer,
+blockquote, thead,
+input, textarea, button, select
+  background-color: var(--bg1)
+  color: var(--fg)
+
+main
+  background-color: var(--bg)
+
+// Clickables
+a, summary, select,
+input[type='button'],
+input[type='submit'],
+input[type='reset']
+  @extend .clickable
+
+// Scrollbars
+*
+  scrollbar-color: var(--fg1) var(--bg1)
+  scrollbar-width: auto
+  &::-webkit-scrollbar-track
+    background: var(--bg1)
+  &::-webkit-scrollbar-thumb
+    background: var(--fg1)
+  &::-webkit-scrollbar
+    width: auto

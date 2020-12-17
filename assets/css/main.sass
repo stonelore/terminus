@@ -1,0 +1,28 @@
+---
+---
+
+// THEMES
+// Loop css.themes in config
+// Set every property under the class `theme-{{ theme }}`
+// Hide an element on a theme with attribute `theme="{{ theme }}"`
+// --------------------------------------
+{% for theme in site.css.themes %}
+.theme-{{ theme[0] }}
+{% for property in theme[1] %}
+  --{{ property[0] }}: {{ property[1] }}
+{% endfor %}
+  [theme='{{ theme[0] }}']
+    display: none
+{% endfor %}
+
+// IMPORTS
+@import reset
+@import colors
+@import typography
+@import links
+@import layout
+@import nav
+@import forms
+@import details
+@import tables
+@import helpers
